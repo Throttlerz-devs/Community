@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block body %}
+
+<body>
+  <header class="p-3 bg-light text-white shadow-sm">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="/static/images/sidlogo.png" class="img-fluid mx-4" alt="" width="90px">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary ">
+              <p class="fs-5">Home</p>
+            </a></li>
+          <li><a href="#" class="nav-link px-2 text-dark">
+              <p class="fs-5">Features</p>
+            </a></li>
+          <li><a href="#" class="nav-link px-2 text-dark">
+              <p class="fs-5">Pricing</p>
+            </a></li>
+          <li><a href="#" class="nav-link px-2 text-dark">
+              <p class="fs-5">About</p>
+            </a></li>
+        </ul>
+
+        <audio controls class="mx-3 my-2 pb-2 p-1" style="height: 35px;">
+          <source src="{{music}}" type="audio/mp3">
+        </audio>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-dark me-2 py-1">Login</button>
+          <button type="button" class="btn btn-warning py-1">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- content   -->
+  {% endblock %}
